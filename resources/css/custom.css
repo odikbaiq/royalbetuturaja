@@ -1,0 +1,72 @@
+/* Custom styles extracted from blade views */
+
+/* From resources/views/auth/register.blade.php */
+.form-control:focus {
+    box-shadow: none;
+    background-color: #ececec !important;
+}
+.btn-primary:hover {
+    background-color: #5a0404 !important;
+    transform: translateY(-2px);
+}
+.card {
+    border-radius: 20px !important;
+}
+/* Memastikan mata terlihat konsisten dengan background light */
+.input-group-text i {
+    font-size: 1.1rem;
+}
+
+/* From resources/views/customer/profile.blade.php */
+.avatar-circle {
+    width: 110px; height: 110px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    border: 5px solid #f8f9fa;
+}
+.text-gold { color: #D4AF37; }
+.nav-pills .nav-link.active { background-color: #8B0000 !important; color: white !important; }
+.btn-primary { background-color: #8B0000; border: none; }
+.btn-primary:hover { background-color: #660000; transform: translateY(-2px); transition: 0.3s; }
+.form-control:focus { background-color: #fff !important; box-shadow: 0 0 0 0.25rem rgba(139, 0, 0, 0.1); border: 1px solid #8B0000; }
+.input-group-text { color: #8B0000; }
+.tracking-wider { letter-spacing: 0.05em; }
+.btn-white { background: white; }
+.btn-white:hover { color: #8B0000; }
+
+/* From resources/views/layouts/customer.blade.php */
+body {
+    background-color: #f8f9fa; /* Warna latar belakang dashboard yang bersih */
+    overflow-x: hidden;
+}
+
+/* Styling Area Konten Utama */
+.main-content {
+    margin-left: 280px; /* Jarak pas sesuai lebar sidebar kita */
+    min-height: 100vh;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+/* Navbar khusus Mobile (Hanya muncul jika layar di bawah 992px) */
+.mobile-nav {
+    display: none;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Responsif: Ketika dibuka di HP / Tablet */
+@media (max-width: 991.98px) {
+    .main-content {
+        margin-left: 0; /* Konten jadi full screen di HP */
+        padding: 15px;
+    }
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+}

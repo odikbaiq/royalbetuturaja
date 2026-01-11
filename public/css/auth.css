@@ -1,0 +1,86 @@
+/* AUTH ROYAL BETUTU RAJA STYLES */
+
+.rbr-auth-wrapper {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.rbr-auth-header h2 {
+    color: #333;
+}
+
+.rbr-auth-card {
+    border-radius: 20px !important;
+    overflow: hidden;
+}
+
+.rbr-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #6c757d;
+    text-transform: uppercase;
+}
+
+.rbr-input {
+    background-color: #f3f4f7 !important;
+    border: none !important;
+    font-size: 0.95rem;
+    padding: 12px 15px;
+}
+
+.rbr-input-group {
+    background-color: #f3f4f7 !important;
+    border: none !important;
+    font-size: 0.95rem;
+    padding: 12px 15px;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+}
+
+.rbr-input-icon {
+    background-color: #f3f4f7 !important;
+    border: none !important;
+    cursor: pointer;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+
+.rbr-btn-login {
+    background-color: #700505 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 15px rgba(112, 5, 5, 0.3);
+}
+
+.rbr-btn-login:hover {
+    background-color: #550404 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(112, 5, 5, 0.4);
+}
+
+.rbr-link {
+    color: #700505;
+}
+
+.rbr-link:hover {
+    color: #550404;
+    text-decoration: underline !important;
+}
+
+.rbr-auth-card {
+    border-top: 5px solid #000 !important;
+    /* Memberi aksen hitam agar terasa lebih formal/admin */
+}
+
+.admin-badge {
+    background-color: #700505;
+    color: #FFD700;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    vertical-align: middle;
+    margin-left: 5px;
+}

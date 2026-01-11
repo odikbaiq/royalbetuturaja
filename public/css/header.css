@@ -1,0 +1,9 @@
+.bg-royal-gradient {
+    background: linear-gradient(135deg, #8B0000, #000000) !important;
+}
+.royal-title-gold {
+    color: #FFD700 !important;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Memberi efek dimensi agar lebih mewah */
+}
+

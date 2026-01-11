@@ -1,0 +1,45 @@
+/* ADMIN LAYOUT - ROYAL BETUTU RAJA */
+
+body {
+    background-color: #f4f7f6; /* Warna abu-abu sangat muda khas dashboard */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.rbr-admin-main {
+    margin-left: 280px; /* Lebar sidebar */
+    padding: 30px;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger Button Style */
+.rbr-hamburger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1050;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background: #5a0000; /* Warna merah gelap senada sidebar */
+    color: #FFD700; /* Warna emas */
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.rbr-hamburger:hover {
+    background: #1a0000;
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1199.98px) {
+    .rbr-admin-main {
+        margin-left: 0;
+        padding: 80px 15px 20px 15px; /* Tambah padding top agar tidak tertutup tombol hamburger */
+    }
+}

@@ -1,0 +1,8 @@
+/* Payment */
+.text-gold { color: #D4AF37; }
+.bg-dark { background-color: #1a1a1a !important; }
+.grayscale { filter: grayscale(100%); opacity: 0.6; }
+.x-small { font-size: 0.75rem; }
+.btn-primary { background-color: #8B0000; border: none; }
+.btn-primary:hover { background-color: #660000; }
+.border-primary { border-color: #8B0000 !important; }

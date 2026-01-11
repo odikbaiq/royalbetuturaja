@@ -1,0 +1,165 @@
+/* ROYAL BETUTU RAJA SIDEBAR STYLES */
+:root {
+    --rbr-sidebar-width: 280px;
+    --rbr-sidebar-bg: linear-gradient(180deg, #5a0000 0%, #1a0000 100%);
+    --rbr-gold: #FFD700;
+    --rbr-text-muted: rgba(255, 255, 255, 0.5);
+    --rbr-hover-bg: rgba(255, 215, 0, 0.1);
+}
+
+.rbr-sidebar {
+    width: var(--rbr-sidebar-width);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: var(--rbr-sidebar-bg);
+    color: #ffffff;
+    z-index: 1030;
+    transition: all 0.3s ease;
+    overflow-y: auto;
+}
+
+.rbr-sidebar-header {
+    padding: 30px 25px;
+    background: rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.rbr-brand-text {
+    color: var(--rbr-gold);
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    font-size: 1.1rem;
+}
+
+.rbr-brand-subtext {
+    color: var(--rbr-text-muted);
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+}
+
+.rbr-sidebar-content {
+    padding: 20px 15px;
+}
+
+.rbr-nav-section {
+    color: var(--rbr-text-muted);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin: 25px 0 10px 15px;
+    list-style: none;
+}
+
+.rbr-nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    color: rgba(255,255,255,0.8) !important;
+    text-decoration: none;
+    border-radius: 12px;
+    margin-bottom: 4px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.rbr-nav-link i {
+    width: 25px;
+    font-size: 1.1rem;
+    margin-right: 12px;
+    color: var(--rbr-gold);
+}
+
+.rbr-nav-link:hover {
+    background: var(--rbr-hover-bg);
+    color: var(--rbr-gold) !important;
+    transform: translateX(5px);
+}
+
+.rbr-nav-link.active {
+    background: var(--rbr-gold);
+    color: #000000 !important;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.rbr-nav-link.active i {
+    color: #000000;
+}
+
+.rbr-btn-logout {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ff6b6b;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.rbr-btn-logout:hover {
+    background: #ff6b6b;
+    color: #fff;
+}
+
+/* Scrollbar Customization */
+.rbr-sidebar::-webkit-scrollbar { width: 5px; }
+.rbr-sidebar::-webkit-scrollbar-track { background: transparent; }
+.rbr-sidebar::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 1199.98px) {
+    .rbr-sidebar { left: -280px; }
+    .rbr-sidebar.active { left: 0; }
+}
+
+/* LAYOUT STYLE - ROYAL BETUTU RAJA */
+
+body {
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Styling Area Konten Utama */
+.rbr-main-content {
+    margin-left: 280px; /* Sesuai dengan --rbr-sidebar-width */
+    min-height: 100vh;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+/* Navbar khusus Mobile */
+.rbr-mobile-nav {
+    display: none;
+    background: #ffffff;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Responsif: Tablet & HP */
+@media (max-width: 1199.98px) {
+    .rbr-main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .rbr-mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+}

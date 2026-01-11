@@ -1,0 +1,163 @@
+.royal-cooking-class .page-header {
+    background: linear-gradient(135deg, #8B0000, #000000) !important;
+}
+
+.royal-cooking-class .text-royal-maroon {
+    color: #700505 !important;
+}
+
+.royal-cooking-class .text-royal-gold {
+    color: #FFD700 !important;
+}
+
+.royal-cooking-class .bg-royal-maroon {
+    background-color: #700505 !important;
+}
+
+.royal-cooking-class .bg-royal-gold {
+    background-color: #FFDF00 !important;
+    color: #000 !important;
+}
+
+.royal-cooking-class .icon-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #700505;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.royal-cooking-class .image-frame-bg {
+    position: absolute;
+    top: 0;
+    start: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+    background-color: #700505;
+    transform: rotate(-3deg);
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.royal-cooking-class .package-card {
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: none;
+}
+
+.royal-cooking-class .btn-reserve {
+    background-color: #700505;
+    color: #FFDF00;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+}
+
+.royal-cooking-class .btn-reserve:hover {
+    background-color: #8B0000;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+    /* Warna Utama Tema Royal */
+    :root {
+        --royal-maroon: #5a0000;
+        --royal-gold: #FFD700;
+    }
+
+    /* Perbaikan Icon Circle */
+    .icon-circle {
+        width: 50px;
+        height: 50px;
+        background-color: var(--royal-maroon);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0; /* Agar lingkaran tidak gepeng saat teks panjang */
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Efek Hover (Opsional) */
+    .icon-circle:hover {
+        background-color: var(--royal-gold);
+        transform: translateY(-3px);
+    }
+
+    .icon-circle:hover i {
+        color: var(--royal-maroon) !important;
+    }
+
+    /* Tambahan Styling untuk Page Header & Card */
+    .bg-royal-gradient {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/feature/galladinner.png'); /* Ganti dengan path gambar anda */
+        background-size: cover;
+        background-position: center;
+        padding: 120px 0 60px 0;
+    }
+
+    .bg-royal-gold {
+        background-color: var(--royal-gold);
+        color: var(--royal-maroon);
+        font-weight: bold;
+    }
+
+    .btn-reserve {
+        background-color: var(--royal-maroon);
+        color: white;
+        border-radius: 50px;
+        transition: 0.3s;
+    }
+
+    .btn-reserve:hover {
+        background-color: #3d0000;
+        color: var(--royal-gold);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .text-royal-maroon {
+        color: var(--royal-maroon);
+        font-weight: 700;
+    }
+
+    /* Mengatur tinggi gambar agar seragam */
+    .image-wrapper img {
+        height: 150px;
+        object-fit: contain;
+    }
+
+    /* Mengatur tinggi judul agar sejajar */
+    .service-title {
+        min-height: 3.5rem; /* Menampung hingga 2 baris teks */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Mengatur tinggi deskripsi agar sejajar */
+    .service-desc {
+        min-height: 4.5rem; /* Menampung hingga 3 baris teks */
+        font-size: 0.95rem;
+    }
+
+    /* Efek Hover untuk kartu */
+    .service-card {
+        transition: all 0.3s ease;
+        border: 1px solid transparent;
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px);
+        border-color: #D4AF37;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+    }
+
+    .mt-auto {
+        margin-top: auto !important;
+    }

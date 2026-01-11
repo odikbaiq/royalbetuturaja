@@ -1,0 +1,21 @@
+.rating-stars {
+    font-size: 2rem;
+}
+
+.rating-stars .stars .star-rating {
+    display: inline-block;
+    cursor: pointer;
+    pointer-events: auto;
+    color: #ddd;
+    transition: color 0.2s;
+    margin-right: 5px;
+}
+
+.rating-stars .stars .star-rating.selected {
+    color: #ffc107;
+}
+
+.rating-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
