@@ -134,3 +134,7 @@ Route::middleware(['auth', 'customer'])->prefix('customer')->name('customer.')->
 
 // 5. MIDTRANS CALLBACK
 Route::post('/midtrans/callback', [CustomerPaymentController::class, 'callback'])->name('midtrans.callback');
+
+
+//database test
+
