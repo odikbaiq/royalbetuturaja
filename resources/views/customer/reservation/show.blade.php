@@ -26,7 +26,7 @@
                         <p><strong>Metode:</strong> {{ $reservation->payment->method }}</p>
                         <p><strong>Jumlah:</strong> Rp {{ number_format($reservation->payment->amount, 0, ',', '.') }}</p>
                         @if($reservation->payment->status == 'Lunas' && $reservation->status == 'Dikonfirmasi')
-                            <a href="{{ route('customer.payment.downloadInvoice', $reservation->id) }}" class="btn btn-success">Download E-Voucher</a>
+                            <a href="{{ route('customer.payment.invoice', $reservation->id) }}" class="btn btn-success">Download E-Voucher</a>
                         @endif
                     @else
                         <a href="{{ route('customer.payment.pay', $reservation->id) }}" class="btn btn-primary">Bayar Sekarang</a>

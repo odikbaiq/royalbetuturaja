@@ -52,11 +52,6 @@
                     @endforeach
                 </div>
 
-                <div class="text-center mt-4">
-                    <a href="{{ route('public.testimonial') }}" class="btn btn-outline-primary">
-                        <i class="fas fa-eye me-2"></i>Lihat Semua Testimoni
-                    </a>
-                </div>
             @else
                 <div class="text-center py-5">
                     <i class="fas fa-comments fa-3x text-muted mb-3"></i>
